@@ -1,7 +1,7 @@
 {
   "name": "react-native-welcome",
   "title": "React Native Welcome",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Welcome the user and introduce your app",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-welcome.git",
-    "baseUrl": "https://github.com/github_account/react-native-welcome"
+    "url": "git+https://github.com/zonayedpca/react-native-welcome.git",
+    "baseUrl": "https://github.com/zonayedpca/react-native-welcome"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-welcome",
+    "react-native-screen",
+    "react-native-welcome-screen",
+    "react-native-welcome-slider"
   ],
   "author": {
     "name": "Zonayed Ahmed",
