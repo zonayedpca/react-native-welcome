@@ -26,6 +26,8 @@ And then Use it in a screen, you must need to set your screen so that it can tak
 <Welcome />
 ```
 
+### Usage
+
 It has a default starter appearance. But you can always modify it as much as you want by utilizing these props:
 
 - `bgColor`: Defines the color of entire background. Default is set to `#111a29`
