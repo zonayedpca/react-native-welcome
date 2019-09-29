@@ -1,4 +1,10 @@
 # react-native-welcome
+[![Build Status](https://travis-ci.com/zonayedpca/react-native-welcome.svg?token=LXmMpgxtChnPA2Z3yHVr&branch=master)](https://travis-ci.com/zonayedpca/react-native-welcome)
+
+Welcome your user with useful instructions. Check out these screenshots:
+
+![Welcome Screen](https://user-images.githubusercontent.com/18544717/65834095-1b09c200-e2f5-11e9-97cf-a85a24776090.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/65834099-23fa9380-e2f5-11e9-88bd-cdff3cdcaa6d.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/65834101-2826b100-e2f5-11e9-9a9b-f4961f287b87.png)
+
 
 ## Getting started
 
