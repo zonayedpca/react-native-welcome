@@ -83,7 +83,7 @@ const styles = {
 Welcome.defaultProps = {
   bgColor: "#fff",
   texts: [
-    "Welcome",
+    "Welcome!",
     "Peace be upon you",
     "Make something great",
     "Pass array of text as texts props to configure this messages",
