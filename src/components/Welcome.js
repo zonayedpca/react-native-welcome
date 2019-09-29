@@ -3,6 +3,8 @@ import { View, Text, ScrollView, Dimensions, StatusBar } from "react-native";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
+import BottomNav from "./BottomNav";
+
 class Welcome extends Component {
   constructor(props) {
     super(props);
@@ -35,8 +37,16 @@ class Welcome extends Component {
       textStyle,
       barBgColor,
       barStyle,
-      showIndicator
+      showIndicator,
+      onDone,
+      navStyle,
+      prevText,
+      nextText,
+      doneText,
+      dotColor,
+      dotBg
     } = this.props;
+    const { page } = this.state;
     return (
       <View style={{ backgroundColor: bgColor }}>
         <StatusBar backgroundColor={barBgColor} barStyle={barStyle} />
@@ -53,6 +63,20 @@ class Welcome extends Component {
             </View>
           ))}
         </ScrollView>
+        <BottomNav
+          handleOnPrev={this.scrollTo.bind(this, page - 1)}
+          handleDotPress={this.scrollTo.bind(this, 0)}
+          handleOnNext={this.scrollTo.bind(this, page + 1)}
+          handleOnDone={onDone}
+          texts={texts}
+          page={page}
+          navStyle={navStyle}
+          prevText={prevText}
+          nextText={nextText}
+          doneText={doneText}
+          dotColor={dotColor}
+          dotBg={dotBg}
+        />
       </View>
     );
   };
@@ -77,13 +101,26 @@ const styles = {
   },
   textDefaultStyle: {
     textAlign: "center"
+  },
+  btnStyle: {
+    paddingRight: 25,
+    paddingLeft: 25,
+    borderRadius: 40,
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+  btnTextStyle: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "900",
+    textTransform: "uppercase"
   }
 };
 
 Welcome.defaultProps = {
   bgColor: "#fff",
   texts: [
-    "Welcome!",
+    "Welcome!!!",
     "Peace be upon you",
     "Make something great",
     "Pass array of text as texts props to configure this messages",
