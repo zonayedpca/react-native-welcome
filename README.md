@@ -4,7 +4,7 @@
 
 Welcome your user with useful instructions. Check out these screenshots:
 
-![Welcome Screen](https://user-images.githubusercontent.com/18544717/67630581-01d24200-f8b0-11e9-89ca-5cc5668ed737.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/67630583-01d24200-f8b0-11e9-8cfc-a816e27bb0e1.png) ![Just Another Screen](https://user-images.githubusercontent.com/18544717/67630584-01d24200-f8b0-11e9-99c4-a40bd731807d.png) ![As many as you want](https://user-images.githubusercontent.com/18544717/67630585-026ad880-f8b0-11e9-9781-e4f14d69d21d.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/67630586-026ad880-f8b0-11e9-93f7-cdda741450a4.png)
+![Welcome Screen](https://user-images.githubusercontent.com/18544717/67630621-a9e80b00-f8b0-11e9-8ac6-79a78604aee0.jpg) ![Middle Screen](https://user-images.githubusercontent.com/18544717/67630623-a9e80b00-f8b0-11e9-8c01-2369dfe37f60.jpg) ![Just Another Screen](https://user-images.githubusercontent.com/18544717/67630624-a9e80b00-f8b0-11e9-9588-6cf2aa2b3b61.jpg) ![As many as you want](https://user-images.githubusercontent.com/18544717/67630625-aa80a180-f8b0-11e9-81c0-fafd81d2f7f8.jpg) ![Last Screen](https://user-images.githubusercontent.com/18544717/67630626-aa80a180-f8b0-11e9-9a3e-13ddd4aeda3b.jpg)
 
 ## Getting started
 
