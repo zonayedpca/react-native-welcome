@@ -41,19 +41,21 @@ It has a default starter appearance. But you can always modify it as much as you
 - children: Pass the components as `children` to show them on the screen individually.
 
 ```javascript
-<Text>Welcome!!!</Text>,
-  <Text>Peace be upon you</Text>,
-  <Text>Make something great</Text>,
-  <Text>Pass your components as children to control this area</Text>,
-  <Text>Once you are done, can skip it</Text>;
+<Welcome>
+    <Text>Welcome!!!</Text>,
+    <Text>Peace be upon you</Text>,
+    <Text>Make something great</Text>,
+    <Text>Pass your components as children to control this area</Text>,
+    <Text>Once you are done, can skip it</Text>;
+</Welcome>
 ```
 
 - `elementContainerStyle`: Defines the styling of the each componentes' container mentioned above. Defaults to:
 
 ```javascript
 {{
-	flex: 1,
-  width: SCREEN_WIDTH,
+    flex: 1,
+    width: SCREEN_WIDTH,
 }}
 ```
 
