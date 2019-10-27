@@ -42,10 +42,11 @@ It has a default starter appearance. But you can always modify it as much as you
 
 ```javascript
 <Welcome>
-  <Text>Welcome!!!</Text>,<Text>Peace be upon you</Text>,
-  <Text>Make something great</Text>,
-  <Text>Pass your components as children to control this area</Text>,
-  <Text>Once you are done, can skip it</Text>;
+  <Text>Welcome!!!</Text>
+  <Text>Peace be upon you</Text>
+  <Text>Make something great</Text>
+  <Text>Pass your components as children to control this area</Text>
+  <Text>Once you are done, can skip it</Text>
 </Welcome>
 ```
 
