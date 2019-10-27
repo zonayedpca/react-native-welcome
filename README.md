@@ -4,7 +4,7 @@
 
 Welcome your user with useful instructions. Check out these screenshots:
 
-![Welcome Screen](https://user-images.githubusercontent.com/18544717/67630307-7787df00-f8ab-11e9-9eb8-812f668b082d.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/67630308-7787df00-f8ab-11e9-89ae-f9a9c9c56f61.png) ![Just Another Screen](https://user-images.githubusercontent.com/18544717/67630309-78207580-f8ab-11e9-9574-36f23c38024f.png) ![As many as you want](https://user-images.githubusercontent.com/18544717/67630382-b66a6480-f8ac-11e9-9162-f45116f384fe.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/67630311-78b90c00-f8ab-11e9-9746-f5493e9e7b78.png)
+![Welcome Screen](https://user-images.githubusercontent.com/18544717/67630581-01d24200-f8b0-11e9-89ca-5cc5668ed737.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/67630583-01d24200-f8b0-11e9-8cfc-a816e27bb0e1.png) ![Just Another Screen](https://user-images.githubusercontent.com/18544717/67630584-01d24200-f8b0-11e9-99c4-a40bd731807d.png) ![As many as you want](https://user-images.githubusercontent.com/18544717/67630585-026ad880-f8b0-11e9-9781-e4f14d69d21d.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/67630586-026ad880-f8b0-11e9-93f7-cdda741450a4.png)
 
 ## Getting started
 
@@ -42,11 +42,10 @@ It has a default starter appearance. But you can always modify it as much as you
 
 ```javascript
 <Welcome>
-    <Text>Welcome!!!</Text>,
-    <Text>Peace be upon you</Text>,
-    <Text>Make something great</Text>,
-    <Text>Pass your components as children to control this area</Text>,
-    <Text>Once you are done, can skip it</Text>;
+  <Text>Welcome!!!</Text>,<Text>Peace be upon you</Text>,
+  <Text>Make something great</Text>,
+  <Text>Pass your components as children to control this area</Text>,
+  <Text>Once you are done, can skip it</Text>;
 </Welcome>
 ```
 
