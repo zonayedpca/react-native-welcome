@@ -1,10 +1,10 @@
 # react-native-welcome
+
 [![Build Status](https://travis-ci.com/zonayedpca/react-native-welcome.svg?token=LXmMpgxtChnPA2Z3yHVr&branch=master)](https://travis-ci.com/zonayedpca/react-native-welcome)
 
 Welcome your user with useful instructions. Check out these screenshots:
 
-![Welcome Screen](https://user-images.githubusercontent.com/18544717/65834095-1b09c200-e2f5-11e9-97cf-a85a24776090.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/65834099-23fa9380-e2f5-11e9-88bd-cdff3cdcaa6d.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/65834101-2826b100-e2f5-11e9-9a9b-f4961f287b87.png)
-
+![Welcome Screen](https://user-images.githubusercontent.com/18544717/67630307-7787df00-f8ab-11e9-9eb8-812f668b082d.png) ![Middle Screen](https://user-images.githubusercontent.com/18544717/67630308-7787df00-f8ab-11e9-89ae-f9a9c9c56f61.png) ![Just Another Screen](https://user-images.githubusercontent.com/18544717/67630309-78207580-f8ab-11e9-9574-36f23c38024f.png) ![As many as you want](https://user-images.githubusercontent.com/18544717/67630382-b66a6480-f8ac-11e9-9162-f45116f384fe.png) ![Last Screen](https://user-images.githubusercontent.com/18544717/67630311-78b90c00-f8ab-11e9-9746-f5493e9e7b78.png)
 
 ## Getting started
 
@@ -38,27 +38,22 @@ It has a default starter appearance. But you can always modify it as much as you
 
 - `bgColor`: Defines the color of entire background. Default is set to `#fff`
 
-- `texts`: Defines the text you want to show on the screen. Each text gets one screen. Defaults to:
+- children: Pass the components as `children` to show them on the screen individually.
 
 ```javascript
-{
-  [
-    "Welcome!!!",
-    "Peace be upon you",
-    "Make something great",
-    "Pass array of text as texts props to configure this messages",
-    "Once you are done, can skip it"
-  ];
-}
+<Text>Welcome!!!</Text>,
+  <Text>Peace be upon you</Text>,
+  <Text>Make something great</Text>,
+  <Text>Pass your components as children to control this area</Text>,
+  <Text>Once you are done, can skip it</Text>;
 ```
 
-- `textStyle`: Defines the styling of the each text mentioned above. Defaults to:
+- `elementContainerStyle`: Defines the styling of the each componentes' container mentioned above. Defaults to:
 
 ```javascript
 {{
-	color: "#333",
-	fontSize: 18,
-	textAlign: "center"
+	flex: 1,
+  width: SCREEN_WIDTH,
 }}
 ```
 
@@ -81,11 +76,11 @@ It has a default starter appearance. But you can always modify it as much as you
 }}
 ```
 
-- `prevText`: Defines the text for previous screen button. Defaults to `Prev`. Can be any text(More control is under development)
+- `prevArrow`: Defines the component for previous screen button. Can be anything.
 
-- `nextText`: Defines the text for screen screen button. Defaults to `Next`. Can be any text(More control is under development)
+- `nextArrow`: Defines the component for screen screen button. Can be anything.
 
-- `doneText`: Defines the text for finished screen button. Defaults to `Done`. Can be any text(More control is under development)
+- `doneIcon`: Defines the component for finished screen button. Can be anything.
 
 - `dotColor`: Defines the color of the active dots in the nav. Defaults to `#fff`
 

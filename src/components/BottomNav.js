@@ -2,21 +2,35 @@ import React from "react";
 import {
   View,
   Text,
+  Image,
   TouchableOpacity,
   TouchableWithoutFeedback
 } from "react-native";
+
+const defaultIcon = icon => {
+  const icons = {
+    left: require("../assets/icon/left-arrow.png"),
+    right: require("../assets/icon/right-arrow.png"),
+    done: require("../assets/icon/done.png")
+  };
+  return (
+    <View>
+      <Image style={{ width: 15, height: 15 }} source={icons[icon]} />
+    </View>
+  );
+};
 
 const BottomNav = ({
   handleOnPrev,
   handleDotPress,
   handleOnNext,
   handleOnDone,
-  texts,
+  childrens,
   page,
   navStyle,
-  prevText,
-  nextText,
-  doneText,
+  prevArrow,
+  nextArrow,
+  doneIcon,
   dotBg,
   dotColor,
   onDone
@@ -30,14 +44,14 @@ const BottomNav = ({
             onPress={handleOnPrev}
             hitSlop={{ top: 30, bottom: 30, left: 30, right: 30 }}
           >
-            <Text>{prevText}</Text>
+            {prevArrow}
           </TouchableOpacity>
         ) : (
           <View></View>
         )}
       </View>
       <View style={{ flexDirection: "row" }}>
-        {texts.map((text, index) => (
+        {childrens.map((text, index) => (
           <TouchableWithoutFeedback key={index} onPress={handleDotPress}>
             <View
               style={[
@@ -58,19 +72,19 @@ const BottomNav = ({
         ))}
       </View>
       <View style={{ width: 30 }}>
-        {page < texts.length - 1 ? (
+        {page < childrens.length - 1 ? (
           <TouchableOpacity
             onPress={handleOnNext}
             hitSlop={{ top: 30, bottom: 30, left: 30, right: 30 }}
           >
-            <Text>{nextText}</Text>
+            {nextArrow}
           </TouchableOpacity>
         ) : (
           <TouchableOpacity
             onPress={handleOnDone}
             hitSlop={{ top: 30, bottom: 30, left: 30, right: 30 }}
           >
-            <Text>{doneText}</Text>
+            {doneIcon}
           </TouchableOpacity>
         )}
       </View>
@@ -93,9 +107,9 @@ BottomNav.defaultProps = {
     backgroundColor: "#eee",
     borderColor: "#333"
   },
-  prevText: "Prev",
-  nextText: "Next",
-  doneText: "Done",
+  prevArrow: defaultIcon("left"),
+  nextArrow: defaultIcon("right"),
+  doneIcon: defaultIcon("done"),
   dotColor: "#fff",
   dotBg: "#000",
   handleOnDone: () => {

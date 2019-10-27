@@ -30,19 +30,19 @@ class Welcome extends Component {
   };
 
   renderScreen = () => {
-    const { textContainer, textDefaultStyle } = styles;
+    const { elementContainer } = styles;
     const {
+      children,
       bgColor,
-      texts,
-      textStyle,
+      elementContainerStyle,
       barBgColor,
       barStyle,
       showIndicator,
       onDone,
       navStyle,
-      prevText,
-      nextText,
-      doneText,
+      prevArrow,
+      nextArrow,
+      doneIcon,
       dotColor,
       dotBg
     } = this.props;
@@ -57,23 +57,32 @@ class Welcome extends Component {
           ref={this.refToScroll}
           showsHorizontalScrollIndicator={showIndicator}
         >
-          {texts.map((text, index) => (
-            <View key={index} style={textContainer}>
-              <Text style={[textDefaultStyle, textStyle]}>{text}</Text>
+          {children.length ? (
+            children.map((oneChildren, index) => (
+              <View
+                key={index}
+                style={[elementContainer, elementContainerStyle]}
+              >
+                {oneChildren}
+              </View>
+            ))
+          ) : (
+            <View style={[elementContainer, elementContainerStyle]}>
+              {children}
             </View>
-          ))}
+          )}
         </ScrollView>
         <BottomNav
           handleOnPrev={this.scrollTo.bind(this, page - 1)}
           handleDotPress={this.scrollTo.bind(this, 0)}
           handleOnNext={this.scrollTo.bind(this, page + 1)}
           handleOnDone={onDone}
-          texts={texts}
+          childrens={children.length ? children : [children]}
           page={page}
           navStyle={navStyle}
-          prevText={prevText}
-          nextText={nextText}
-          doneText={doneText}
+          prevArrow={prevArrow}
+          nextArrow={nextArrow}
+          doneIcon={doneIcon}
           dotColor={dotColor}
           dotBg={dotBg}
         />
@@ -93,10 +102,8 @@ const styles = {
     justifyContent: "center",
     alignItems: "center"
   },
-  textContainer: {
+  elementContainer: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     width: SCREEN_WIDTH
   },
   textDefaultStyle: {
@@ -119,17 +126,16 @@ const styles = {
 
 Welcome.defaultProps = {
   bgColor: "#fff",
-  texts: [
-    "Welcome!!!",
-    "Peace be upon you",
-    "Make something great",
-    "Pass array of text as texts props to configure this messages",
-    "Once you are done, can skip it"
+  children: [
+    <Text>Welcome!!!</Text>,
+    <Text>Peace be upon you</Text>,
+    <Text>Make something great</Text>,
+    <Text>Pass your components as children to control this area</Text>,
+    <Text>Once you are done, can skip it</Text>
   ],
-  textStyle: {
-    color: "#333",
-    fontSize: 18,
-    textAlign: "center"
+  elementContainerStyle: {
+    alignItems: "center",
+    justifyContent: "center"
   },
   barBgColor: "#eee",
   barStyle: "dark-content",
