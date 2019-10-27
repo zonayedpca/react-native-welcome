@@ -38,19 +38,19 @@ It has a default starter appearance. But you can always modify it as much as you
 
 - `bgColor`: Defines the color of entire background. Default is set to `#fff`
 
-- children: Pass the components as `children` to show them on the screen individually.
+- children: Pass the elements as `children` to show them on the screen individually.
 
 ```javascript
 <Welcome>
   <Text>Welcome!!!</Text>
   <Text>Peace be upon you</Text>
   <Text>Make something great</Text>
-  <Text>Pass your components as children to control this area</Text>
+  <Text>Pass your elements as children to control this area</Text>
   <Text>Once you are done, can skip it</Text>
 </Welcome>
 ```
 
-- `elementContainerStyle`: Defines the styling of the each componentes' container mentioned above. Defaults to:
+- `elementContainerStyle`: Defines the styling of the each elements' container mentioned above. Defaults to:
 
 ```javascript
 {{
@@ -78,11 +78,11 @@ It has a default starter appearance. But you can always modify it as much as you
 }}
 ```
 
-- `prevArrow`: Defines the component for previous screen button. Can be anything.
+- `prevArrow`: Defines the element for previous screen button. Can be anything.
 
-- `nextArrow`: Defines the component for screen screen button. Can be anything.
+- `nextArrow`: Defines the element for screen screen button. Can be anything.
 
-- `doneIcon`: Defines the component for finished screen button. Can be anything.
+- `doneIcon`: Defines the element for finished screen button. Can be anything.
 
 - `dotColor`: Defines the color of the active dots in the nav. Defaults to `#fff`
 

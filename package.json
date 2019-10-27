@@ -1,7 +1,7 @@
 {
   "name": "react-native-welcome",
   "title": "React Native Welcome",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Welcome the user and introduce your app",
   "main": "index.js",
   "scripts": {
