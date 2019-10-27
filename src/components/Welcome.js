@@ -130,7 +130,7 @@ Welcome.defaultProps = {
     <Text>Welcome!!!</Text>,
     <Text>Peace be upon you</Text>,
     <Text>Make something great</Text>,
-    <Text>Pass your components as children to control this area</Text>,
+    <Text>Pass your elements as children to control this area</Text>,
     <Text>Once you are done, can skip it</Text>
   ],
   elementContainerStyle: {
